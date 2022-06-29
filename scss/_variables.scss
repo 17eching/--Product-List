@@ -1,0 +1,32 @@
+// Color system
+
+$primary: #3F5D45;
+$secondary: #EAF0ED;
+$warning: #FFE180;
+
+// Typography
+
+$font-family-base: " PingFang TC", sans-serif;
+$font-family-footer: "Helvetica Neue", sans-serif;
+
+$font-size-base: 20px;
+$font-size-lg: $font-size-base * 1.2;
+$font-size-sm: $font-size-base * .8;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+// RWD
+
+@mixin pad {
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 576px) {
+        @content
+    }
+}
